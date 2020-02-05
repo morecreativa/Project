@@ -13,6 +13,8 @@
 4) 예정 -> Thread로 구현, User Level 시스템, Level 별 장애물 설치, 상대방 공격
 
 3. 총동아리연합회 App 
+1) Naver Developer OPEN API
+2) UI
 
 4. 아이식당이름뭐였더라 App
 1) Google Map API -> 1$ 
