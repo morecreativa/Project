@@ -25,7 +25,7 @@ Thread로 구현, User Level 시스템, Level 별 장애물 설치,
 3) 지도 클릭하면 가게 나오게? 해당 가게의 지도 확대 / 갔던 날짜까지 갱신 가능 / 
 4) 식당 이름 검색, 분류 검색
 
-5. Nation_Of_Delivery -> 2020.02 ~ ing
+5. Nation_Of_Delivery 
 1) 이것이 배민짭이다.
 2) Main.cpp 에서 한번에 다짬 -> 메뉴 추가만 하면 다 나옴
 3) 짭버전2 Utility
@@ -33,5 +33,7 @@ Thread로 구현, User Level 시스템, Level 별 장애물 설치,
 (2) 메뉴추가
 (3) 메뉴 및 가격 수정
 (4) 
-4) 라이더 최단경로 -> Recursive? 및 예상 시간
-4-1) 위치기반 경로탐색
+(4) 라이더 최단경로 -> Recursive? 및 예상 시간
+(4)-1 위치기반 경로탐색
+
+6. Modeling Amazon Web / Instagram with React

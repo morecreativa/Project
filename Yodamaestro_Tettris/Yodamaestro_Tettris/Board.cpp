@@ -16,7 +16,7 @@ Board::Board()
 }
 
 int Board::GetState(cursur_point pos) {
-	return board_[pos.GetX()][pos.GetY];
+	return board_[pos.GetX()][pos.GetY()];
 }
 
 void Board::SetState(cursur_point pos,int state) {

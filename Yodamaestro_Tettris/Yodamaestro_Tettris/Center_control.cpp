@@ -37,39 +37,45 @@ Center_control::Center_control(cursur_point reference_pos, int key_esc, int key_
 void Center_control::DrawBoard(void) {
 	int i;
 	cursur_point::GotoXY(reference_pos_);
-	cout << "▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦";
+	cout << "▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦" << endl;
 	for (i = 0; i < 20; i++) {
 		if (i == 11) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦ → 오른쪽  ▦";
+			cout << "▦                    ▦ → 오른쪽  ▦" << endl;
 		}
 		else if (i == 13) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦ ← 왼쪽    ▦";
+			cout << "▦                    ▦ ← 왼쪽    ▦" << endl;
 		}
 		else if (i == 15) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦ ↑ 회전    ▦";
+			cout << "▦                    ▦ ↑ 회전    ▦" << endl;
 		}
 		else if (i == 17) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦ ↓ 아래    ▦";
+			cout << "▦                    ▦ ↓ 아래    ▦" << endl;
 		}
 		else if (i == 19) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦ SPACE 낙하▦";
+			cout << "▦                    ▦ SPACE 낙하 ▦" << endl;
 		}
 		else if (i == 6 || i==10) {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦▦▦▦▦▦▦▦";
+			cout << "▦                    ▦▦▦▦▦▦▦▦" << endl;
 		}
 		else {
 			cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-			cout << "▦                    ▦           ▦";
+			cout << "▦                    ▦            ▦" << endl;
 		}
 	}
 	cursur_point::GotoXY(reference_pos_ + cursur_point(0, i + 1));
-	cout << "▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦";
+	cout << "▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦▦" << endl;
+}
+
+void Center_control::Run(void) {
+	while (running_) {
+		RunStep();
+	}
 }
 
 void Center_control::RunStep(void) {

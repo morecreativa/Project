@@ -1,6 +1,6 @@
 #pragma once
 
-#include "cursur_point.h";
+#include "cursur_point.h"
 
 #define EMPTY -1
 
